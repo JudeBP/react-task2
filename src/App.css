@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom CSS */
+.employees-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee {
+  display: flex;
+  font-size: 25px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  width: 100%;
+  position: relative;
+  box-shadow: 5px 5px 10px black;
+  transition: 0.25s;
+}
+
+.employee:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px black;
+}
+
+.employee:hover .employee-image .avatar {
+  width: 60%;
+}
+
+.employee-image {
+  width: 50%;
+  height: auto;
+}
+
+/* For both modal and list */
+.avatar {
+  border-radius: 50%;
+  position: relative;
+  width: 60%;
+  aspect-ratio: 1 / 1;
+}
+
+.employee-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.view-employee {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+
+
+/* Modal Content */
+.container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 0;
+}
+
+.details .name {
+  margin-bottom: 25px;
+}
+
+.details * {
+  margin-bottom: 15px;
+}
+
+.close-btn {
+  position: absolute;
+  padding: 5px 15px;;
+  right: 20px;
+  top: 20px;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 80%;
+  max-width: 500px;
+}
+
