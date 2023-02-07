@@ -18,8 +18,8 @@ Cohort #28
 ## Screenshots
 
 ### Main
-[Main](./screenshots/main.png)
+![Main](./screenshots/main.png)
 
 
 ### Modal
-[Modal](./screenshots/modal.png)
+![Modal](./screenshots/modal.png)
